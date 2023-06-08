@@ -4,7 +4,7 @@
 
 🚀 Atualmente, possuo habilidades em diversas tecnologias, incluindo SQL, Python, Base de dados Oracle, Cloud e Spark (Pyspark). Estou em constante busca por crescimento profissional e adoro utilizar meu entusiasmo por dados para contribuir com projetos inovadores.
 
-Seja bem-vindo(a) ao meu perfil do GitHub, onde compartilho meus projetos e experiências no campo da análise de dados! 📊📚💻
+Seja bem-vindo(a) ao meu perfil do GitHub, onde compartilho meus projetos e experiências no campo de dados! 📊📚💻
 
 <!---
 AnandaEllenmrs/AnandaEllenmrs is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
