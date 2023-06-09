@@ -1,0 +1,593 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AnandaEllenmrs/Estudos/blob/main/Desafio_Python_ANANDAELL\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Bem vindas ao desafio de Python do Bootcamp Data Analytics da WoMakersCode!\n",
+        "Neste notebook, voce deve escrever o codigo python em resposta à cada uma das perguntas. Esteja atenta ao enunciado do problema!\n"
+      ],
+      "metadata": {
+        "id": "Z55f1u4p4oHu"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Desafio 1\n",
+        "Escreva uma função em python que lê dois números inteiros (a,b) e gere como resultado as seguintes operações:adição, subtração, multiplicação e divisão. Execute a funçao na celula abaixo, deixando visivel exemplos de resultados.\n"
+      ],
+      "metadata": {
+        "id": "oFGdIzuu5W7b"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### ESCREVER A FUNÇAO ABAIXO\n",
+        "def operations(a,b):\n",
+        "  #### Escrever abaixo\n",
+        "  def operations(a, b):\n",
+        "    # Adição\n",
+        "    addition = a + b\n",
+        "    print(\"Adição:\", addition)\n",
+        "\n",
+        "    # Subtração\n",
+        "    subtraction = a - b\n",
+        "    print(\"Subtração:\", subtraction)\n",
+        "\n",
+        "    # Multiplicação\n",
+        "    multiplication = a * b\n",
+        "    print(\"Multiplicação:\", multiplication)\n",
+        "\n",
+        "    # Divisão\n",
+        "    division = a / b\n",
+        "    print(\"Divisão:\", division)\n",
+        "\n",
+        "# Exemplo de uso:\n",
+        "a = int(input(\"Digite o primeiro número: \"))\n",
+        "b = int(input(\"Digite o segundo número: \"))\n",
+        "\n",
+        "operations(a, b)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "LzCl-VH14t4a",
+        "outputId": "a438f33e-a45f-4979-8926-1f8cc421e828",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o primeiro número: 4\n",
+            "Digite o segundo número: 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "kMNcvrYZ4krA",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "cea0613d-334a-4cb1-cf77-d707f382a888"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o primeiro número: 4\n",
+            "Digite o segundo número: 4\n",
+            "Adição: 8\n",
+            "Subtração: 0\n",
+            "Multiplicação: 16\n",
+            "Divisão: 1.0\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ],
+      "source": [
+        "#### RODAR A FUNÇAO\n",
+        "def operations(a, b):\n",
+        "    # Adição\n",
+        "    addition = a + b\n",
+        "    print(\"Adição:\", addition)\n",
+        "\n",
+        "    # Subtração\n",
+        "    subtraction = a - b\n",
+        "    print(\"Subtração:\", subtraction)\n",
+        "\n",
+        "    # Multiplicação\n",
+        "    multiplication = a * b\n",
+        "    print(\"Multiplicação:\", multiplication)\n",
+        "\n",
+        "    # Divisão\n",
+        "    division = a / b\n",
+        "    print(\"Divisão:\", division)\n",
+        "\n",
+        "# Exemplo de uso:\n",
+        "a = int(input(\"Digite o primeiro número: \"))\n",
+        "b = int(input(\"Digite o segundo número: \"))\n",
+        "\n",
+        "operations(a, b)\n",
+        "4\n",
+        "4\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 1+ 2"
+      ],
+      "metadata": {
+        "id": "0_GDIGYY_fyf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Desafio 2\n",
+        "Escreva uma função em python que leia como input uma idade e retorne a classificaçao da ideade do individuo da seguinte forma em:\n",
+        "\n",
+        "*  Criança – 0 a 12 anos\n",
+        "*  Adolescente – 13 a 17 anos\n",
+        "*  Adulto – acima de 18 anos\n",
+        "\n",
+        "\n",
+        "Se a idade for um número negativo, mostrar a mensagem que a \"idade inválida\"\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "m_tFtRo5581u"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### ESCREVER A FUNCAO ABAIXO\n",
+        "def classifica_idade(idade):\n",
+        "  #### escrever abaixo\n",
+        "  def classifica_idade(idade):\n",
+        "    if idade < 0:\n",
+        "        return \"Idade inválida\"\n",
+        "    elif idade <= 12:\n",
+        "        return \"Criança\"\n",
+        "    elif idade <= 17:\n",
+        "        return \"Adolescente\"\n",
+        "    else:\n",
+        "        return \"Adulto\"\n",
+        "\n",
+        "# Exemplo de uso:\n",
+        "idade = int(input(\"Digite a idade: \"))\n",
+        "classificacao = classifica_idade(idade)\n",
+        "print(\"Classificação:\", classificacao)\n"
+      ],
+      "metadata": {
+        "id": "cL-OpHGv6hyc",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e284d49a-2b49-4a10-c921-842df93e5b72"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a idade: 10\n",
+            "Classificação: None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#### RODAR A FUNCAO\n",
+        "def classifica_idade(idade):\n",
+        "    if idade < 0:\n",
+        "        return \"Idade inválida\"\n",
+        "    elif idade <= 12:\n",
+        "        return \"Criança\"\n",
+        "    elif idade <= 17:\n",
+        "        return \"Adolescente\"\n",
+        "    else:\n",
+        "        return \"Adulto\"\n",
+        "\n",
+        "# Exemplo de uso:\n",
+        "idade = int(input(\"Digite a idade: \"))\n",
+        "classificacao = classifica_idade(idade)\n",
+        "print(\"Classificação:\", classificacao)\n"
+      ],
+      "metadata": {
+        "id": "49IE2lI66zNO",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0d130c2c-f0e9-4258-e341-cd7250431bb7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a idade: 10\n",
+            "Classificação: Criança\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Desafio 3\n",
+        "Crie uma função em python que receba como input um determinado horário em horas e retorne a conversao deste horário para segundos\n"
+      ],
+      "metadata": {
+        "id": "wIGGNN_v60s4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### ESCREVER A FUNCAO ABAIXO\n",
+        "\n",
+        "def time_converter(t):\n",
+        "    segundos = t * 3600  # 1 hora possui 3600 segundos\n",
+        "    return segundos\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "JOF_tcax7ABd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### RODAR A FUNCAO\n",
+        "\n",
+        "horario = 4.9 # Horário de 3 horas e 30 minutos\n",
+        "segundos_convertidos = time_converter(horario)\n",
+        "print(f\"{horario} horas é igual a {segundos_convertidos} segundos.\")\n"
+      ],
+      "metadata": {
+        "id": "AJf1IqiC7Mq_",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6b271aad-958f-4147-ec64-77f3e9a3ccd1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4.9 horas é igual a 17640.0 segundos.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Desafio 4\n",
+        "Crie uma função em python que calcule a média artimética de uma aluna que cursou a disciplina de Programação I. A funcao deve receber como input as notas M1, M2 e M3 e calcular a média. Após a média calculada, a funcao deve anunciar se a aluna foi aprovado, reprovado ou pegou exame de acordo conm a seguinte classificacao:\n",
+        "\n",
+        "* Se a média estiver entre 0.0 e 4.0, o aluno está reprovado\n",
+        "* Se a média estiver entre 4.1 e 6.0, o aluno pegou exame\n",
+        "* Se a média for maior do que 6.0, o aluno está aprovado\n",
+        "* Se o aluno pegou exame, deve ser lida a nota do exame. Se a nota do exame for maior do que 6.0, está aprovado, senão; está reprovado\n"
+      ],
+      "metadata": {
+        "id": "RCrTUh1E7OWn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### ESCREVER A FUNCAO ABAIXO\n",
+        "def calcula_media(M1,M2,M3):\n",
+        "    media = (M1 + M2 + M3) / 3\n",
+        "\n",
+        "    if media >= 0.0 and media <= 4.0:\n",
+        "        resultado = \"Reprovado\"\n",
+        "    elif media > 4.0 and media <= 6.0:\n",
+        "        resultado = \"Exame\"\n",
+        "        nota_exame = float(input(\"Digite a nota do exame: \"))\n",
+        "        if nota_exame > 6.0:\n",
+        "            resultado = \"Aprovado\"\n",
+        "        else:\n",
+        "            resultado = \"Reprovado\"\n",
+        "    elif media > 6.0:\n",
+        "        resultado = \"Aprovado\"\n",
+        "\n",
+        "    return resultado\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "VzNdyWZE70oc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### RODAR A FUNCAO\n",
+        "\n",
+        "nota1 = 7.5\n",
+        "nota2 = 6.8\n",
+        "nota3 = 5.2\n",
+        "\n",
+        "resultado_aluna = calcula_media(nota1, nota2, nota3)\n",
+        "print(f\"A aluna está {resultado_aluna}.\")"
+      ],
+      "metadata": {
+        "id": "cY7vMECS77QY",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "491a7e3d-2681-4cb5-c47d-c314f9b6833b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a nota do exame: 8\n",
+            "A aluna está Aprovado.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Desafio 5\n",
+        "Dado a seguinte lista: \n",
+        "* equipes_bootcamp_dados = [BerthaLutz, GraceHopper, JaquelineGoes, SarahGilbert]\n",
+        "\n",
+        "1. Crie uma função em python que conte quantas vezes aparece a letra a em cada elemento da lista. Seu resultado deve ser uma lista . exemplo: [4,0,1,2]\n",
+        "\n",
+        "2. Leia a lista de alunas: ['Maria', 'Ana','Camila','Mariana','Elaine','Patricia','Marina','Erica','Larissa','Luiza', 'Nicole','Bruna']\n",
+        "\n",
+        "3. Crie uma função que atribua cada uma das alunas em uma das equipes da lista equipes_bootcamp_dados, de modo que cada equipe pode ter 3 alunas no máximo.\n",
+        "\n",
+        " Para isso ordene em alfabética. O seu resultado deve ser um dicionário python. exemplo {'BerthaLutz': ['Ana', 'Bruna', 'Camila'], 'GraceHopper': ['Elaine','Erika','Luiza'],... }\n"
+      ],
+      "metadata": {
+        "id": "eI9AkpYT788b"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### ESCREVER A FUNCAO DA ETAPA 1\n",
+        "def contar_a(lista):\n",
+        "    resultados = []\n",
+        "    for elemento in lista:\n",
+        "        count = elemento.lower().count('a')\n",
+        "        resultados.append(count)\n",
+        "    return resultados\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Zk6U7KnL8WBd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "###### RODAR A ETAPA 1\n",
+        "equipes_bootcamp_dados = ['BerthaLutz', 'GraceHopper', 'JaquelineGoes', 'SarahGilbert']\n",
+        "resultado_contagem = contar_a(equipes_bootcamp_dados)\n",
+        "print(resultado_contagem)"
+      ],
+      "metadata": {
+        "id": "snTgwxt_8hcj",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ba8d3a5e-a7b8-464b-b2d6-6b93e2333f79"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 1, 1, 2]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### LER A ETAPA 2\n",
+        "alunas = ['Maria', 'Ana', 'Camila', 'Mariana', 'Elaine', 'Patricia', 'Marina', 'Erica', 'Larissa', 'Luiza', 'Nicole', 'Bruna']\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "xgkMVykO8jB-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### ESCREVER A FUNCAO DA ETAPA 3\n",
+        "def ordenacao(lista_alunas, equipes_bootcamp_dados):\n",
+        "    alunas_ordenadas = sorted(lista_alunas)\n",
+        "    equipes_alunas = {}\n",
+        "\n",
+        "    for equipe in equipes_bootcamp_dados:\n",
+        "        equipes_alunas[equipe] = []\n",
+        "\n",
+        "    equipe_atual = 0\n",
+        "    for aluna in alunas_ordenadas:\n",
+        "        if len(equipes_alunas[equipes_bootcamp_dados[equipe_atual]]) < 3:\n",
+        "            equipes_alunas[equipes_bootcamp_dados[equipe_atual]].append(aluna)\n",
+        "        else:\n",
+        "            equipe_atual += 1\n",
+        "            if equipe_atual >= len(equipes_bootcamp_dados):\n",
+        "                equipe_atual = 0\n",
+        "\n",
+        "    return equipes_alunas\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "_ySYFooB8jFF"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### RODAR A FUNCAO DA ETAPA 3\n",
+        "lista_alunas = [\"Ana\", \"Bruna\", \"Camila\", \"Elaine\", \"Erika\", \"Luiza\"]\n",
+        "equipes_bootcamp_dados = [\"BerthaLutz\", \"GraceHopper\"]\n",
+        "\n",
+        "equipes_alunas = ordenacao(lista_alunas, equipes_bootcamp_dados)\n",
+        "\n",
+        "# Exibir as equipes e suas respectivas alunas\n",
+        "for equipe, alunas in equipes_alunas.items():\n",
+        "    print(f\"{equipe}: {alunas}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "8qZnUInj9Uvr",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1e6c2885-2e98-4886-9f9d-f7d0bab8fc22"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "BerthaLutz: ['Ana', 'Bruna', 'Camila']\n",
+            "GraceHopper: ['Erika', 'Luiza']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Desafio 6\n",
+        "Escreva uma função em python que leia uma temperatura em graus Celsius e retorne a conversao dela em graus Fahrenheit. \n",
+        "\n",
+        "A fórmula de conversão é F = (9 * C + 160) / 5, na qual F é a temperatura em Fahrenheit e C é a temperatura em graus Celsius\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "AXoFPjyx82gG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### ESCREVER A FUNCAO\n",
+        "def conversor_temperatura(temperatura):\n",
+        "    temp_fahrenheit = (9 * temperatura + 160) / 5\n",
+        "    return temp_fahrenheit"
+      ],
+      "metadata": {
+        "id": "OsCU2Msu9D9o"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##### RODAR A FUNCAO\n",
+        "temperatura_celsius = 20\n",
+        "temperatura_fahrenheit = conversor_temperatura(temperatura_celsius)\n",
+        "print(f\"{temperatura_celsius} graus Celsius é igual a {temperatura_fahrenheit} graus Fahrenheit.\")\n"
+      ],
+      "metadata": {
+        "id": "UBCdsBgi9Xa2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e3ff9aa5-8c97-492b-d58e-d735ad175895"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20 graus Celsius é igual a 68.0 graus Fahrenheit.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
